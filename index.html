@@ -311,3 +311,217 @@
 
     .service {
       background: rgba(255, 250, 245, 0.1);
+      border: 1px solid rgba(255, 250, 245, 0.2);
+      padding: 22px;
+      border-radius: 22px;
+    }
+
+    .contact {
+      text-align: center;
+      background: var(--sand);
+      border-radius: 42px;
+      padding: 60px 28px;
+    }
+
+    .contact p {
+      max-width: 620px;
+      margin: 0 auto 24px;
+    }
+
+    footer {
+      padding: 34px 0;
+      text-align: center;
+      font-size: 0.9rem;
+      color: rgba(45, 32, 28, 0.72);
+    }
+
+    @media (max-width: 860px) {
+      .nav {
+        align-items: flex-start;
+        gap: 14px;
+      }
+
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 12px;
+      }
+
+      .hero, .intro-grid, .section-heading {
+        grid-template-columns: 1fr;
+        display: block;
+      }
+
+      .hero-card {
+        margin-top: 38px;
+      }
+
+      .visual-grid, .cards, .services {
+        grid-template-columns: 1fr;
+      }
+
+      .tile.large {
+        grid-column: span 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="logo" href="#top">Sarah-Jeanne Raymond</a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#portfolio">Portfolio</a>
+        <a href="#work">What I do</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <div class="container hero">
+      <div>
+        <p class="eyebrow">Public Affairs · Communications · Community</p>
+        <h1>Building bridges between Québec and New York.</h1>
+        <p>I create content, campaigns and community-driven projects that help Québec talent, brands and ideas show up with confidence in New York.</p>
+        <div class="buttons">
+          <a class="button primary" href="#portfolio">View my work</a>
+          <a class="button" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero-card" aria-label="Portfolio image placeholder">
+        <div class="mock-photo">Québec Meets NYC<br />⚜️🗽</div>
+      </div>
+    </div>
+
+    <section class="intro">
+      <div class="container intro-grid">
+        <p class="big-text">I’m a Québec communications specialist based in New York, working at the intersection of storytelling, public affairs and community building.</p>
+        <div>
+          <p>Through Québec Meets NYC, I highlight people, businesses and ideas that show how Québec lives beyond its borders. My work blends bilingual content, digital strategy, partnerships, events and cultural storytelling.</p>
+          <p style="margin-top: 16px;">From short-form video series to diplomatic communications and community events, I focus on one thing: creating connections that feel real, useful and memorable.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Portfolio</p>
+            <h2>Selected work</h2>
+          </div>
+          <p>A visual snapshot of projects across content strategy, community building, public diplomacy and campaign execution.</p>
+        </div>
+
+        <div class="visual-grid">
+          <article class="tile large">
+            <span class="number">01</span>
+            <p>Québec Meets NYC · Community storytelling with ~300K reach</p>
+          </article>
+          <article class="tile">
+            <span class="number">02</span>
+            <p>UdeM Alumni Series · Bilingual interviews in NYC</p>
+          </article>
+          <article class="tile">
+            <span class="number">03</span>
+            <p>Francophonie videos · Cultural exchange through short-form content</p>
+          </article>
+          <article class="tile">
+            <span class="number">04</span>
+            <p>DGQNY · Public affairs, monitoring and digital diplomacy</p>
+          </article>
+          <article class="tile large">
+            <span class="number">05</span>
+            <p>Benny & Co. · 40+ campaigns across Québec and Ontario</p>
+          </article>
+          <article class="tile">
+            <span class="number">06</span>
+            <p>Paulinessence · Entrepreneurial brand and content strategy</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container cards">
+        <article class="card">
+          <span class="tag">Founder project</span>
+          <h3>Québec Meets NYC</h3>
+          <p>A bilingual community platform highlighting Québec stories, people and initiatives in New York.</p>
+          <ul>
+            <li>Built a 2,000+ community</li>
+            <li>Produced interviews, reels and event recaps</li>
+            <li>Organized bilingual community events</li>
+            <li>Reached ~300K people across platforms</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <span class="tag">Public diplomacy</span>
+          <h3>Québec Government Office in New York</h3>
+          <p>Public affairs and communications work supporting Québec’s visibility in the U.S. Northeast.</p>
+          <ul>
+            <li>Strategic monitoring and media analysis</li>
+            <li>Talking points and briefing materials</li>
+            <li>Digital content for international audiences</li>
+            <li>Content strategy that increased engagement</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <span class="tag">Marketing campaigns</span>
+          <h3>Benny & Co.</h3>
+          <p>Campaign execution, social media growth and performance analysis for a Québec restaurant brand.</p>
+          <ul>
+            <li>Executed 40+ campaigns</li>
+            <li>Worked with Ogilvy and Valtech</li>
+            <li>Supported 68 franchise locations</li>
+            <li>Grew social channels and newsletter revenue</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="work" class="what-i-do">
+      <div class="container">
+        <p class="eyebrow">What I actually do</p>
+        <h2>I turn stories into visibility, and visibility into connection.</h2>
+        <div class="text-block">
+          <p>My work often starts with a simple question: who needs to see this story, and why should they care? From there, I shape the message, create the content, plan the distribution and look at the results.</p>
+          <p style="margin-top: 16px;">I’m comfortable moving between strategy and execution: writing captions, editing videos, organizing interviews, planning events, building partnerships, analyzing performance and making sure the final result feels native to the platform and true to the brand.</p>
+        </div>
+
+        <div id="services" class="services">
+          <div class="service">Content strategy & storytelling</div>
+          <div class="service">Bilingual communications EN/FR</div>
+          <div class="service">Social media campaigns</div>
+          <div class="service">Community building & events</div>
+          <div class="service">Public affairs materials</div>
+          <div class="service">Québec → NYC positioning</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="contact" id="contact">
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s connect.</h2>
+          <p>Whether it’s a campaign, a collaboration, an event or a Québec story that deserves more visibility in New York, I’d love to hear from you.</p>
+          <div class="buttons" style="justify-content: center;">
+            <a class="button primary" href="mailto:your.email@example.com">Email me</a>
+            <a class="button" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="button" href="https://www.instagram.com/quebec_meets_nyc/" target="_blank" rel="noreferrer">Instagram</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© 2026 Sarah-Jeanne Raymond · Public Affairs & Communications Portfolio</div>
+  </footer>
+</body>
+</html>

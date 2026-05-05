@@ -204,6 +204,10 @@
       margin-top: 34px;
     }
 
+    .tile-link {
+      display: block;
+    }
+
     .tile {
       min-height: 220px;
       border-radius: 24px;
@@ -216,17 +220,22 @@
       position: relative;
     }
 
-    .tile:nth-child(2), .tile:nth-child(5) {
+    .tile-link:nth-child(2) .tile,
+    .tile-link:nth-child(5) .tile {
       background: var(--blush);
     }
 
-    .tile:nth-child(3), .tile:nth-child(6) {
+    .tile-link:nth-child(3) .tile,
+    .tile-link:nth-child(6) .tile {
       background: var(--terracotta);
       color: var(--white);
     }
 
-    .tile.large {
+    .tile-link.wide {
       grid-column: span 2;
+    }
+
+    .tile.large {
       min-height: 300px;
     }
 
@@ -360,7 +369,7 @@
         grid-template-columns: 1fr;
       }
 
-      .tile.large {
+      .tile-link.wide {
         grid-column: span 1;
       }
     }
@@ -417,7 +426,7 @@
 
         <div class="visual-grid">
           
-          <a href="quebec-meets-nyc.html" class="tile-link">
+          <a href="quebec-meets-nyc.html" class="tile-link wide">
             <article class="tile large">
             <span class="number">01</span>
             <p>Québec Meets NYC · Community storytelling with ~300K reach</p>
@@ -441,7 +450,7 @@
               <p>DGQNY · Public affairs, monitoring and digital diplomacy</p>
             </article>
           </a>
-          <a href="benny-and-co.html" class="tile-link">
+          <a href="benny-and-co.html" class="tile-link wide">
             <article class="tile large">
               <span class="number">05</span>
               <p>Benny & Co. · 40+ campaigns across Québec and Ontario</p>
@@ -524,8 +533,8 @@
           <h2>Let’s connect.</h2>
           <p>Whether it’s a campaign, a collaboration, an event or a Québec story that deserves more visibility in New York, I’d love to hear from you.</p>
           <div class="buttons" style="justify-content: center;">
-            <a class="button primary" href="mailto:your.email@example.com">Email me</a>
-            <a class="button" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="button primary" href="mailto:sarah-Jeanne.raymond@hotmail.com">Email me</a>
+            <a class="button" href="https://www.linkedin.com/in/sarah-jeanne-raymond/" target="_blank" rel="noreferrer">LinkedIn</a>
             <a class="button" href="https://www.instagram.com/quebec_meets_nyc/" target="_blank" rel="noreferrer">Instagram</a>
           </div>
         </div>

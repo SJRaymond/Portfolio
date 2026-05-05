@@ -1,188 +1,452 @@
-<section class="case-study">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quebec Meets NYC | Sarah-Jeanne Raymond</title>
+  <meta name="description" content="A case study about Quebec Meets NYC, a community storytelling platform connecting Quebec and New York." />
+  <style>
+    :root {
+      --cream: #f7efe7;
+      --sand: #e9d7c3;
+      --blush: #d8a6a1;
+      --terracotta: #b96755;
+      --brown: #402820;
+      --ink: #2d201c;
+      --white: #fffaf5;
+      --sage: #687a61;
+    }
 
-  <h1>Québec Meets NYC</h1>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-  <p>
-    I’m someone who naturally brings people together, which led me to build a Québec community here in NYC.
-  </p>
+    html {
+      scroll-behavior: smooth;
+    }
 
-  <p>
-    What started as a storytelling project quickly evolved into a growing network connecting Québécois, francophones, and allies through interviews, cultural content, and in-person events.
-  </p>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--cream);
+      color: var(--ink);
+      line-height: 1.6;
+    }
 
-  <p>
-    Today, the project serves as a platform to create bridges between Québec and NYC by showcasing real people, real stories, and real opportunities.
-  </p>
+    img {
+      display: block;
+      max-width: 100%;
+    }
 
-  <hr>
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-  <h2>From storytelling to community</h2>
+    .container {
+      width: min(1120px, 92%);
+      margin: 0 auto;
+    }
 
-  <p>
-    I initially started Québec Meets NYC by sharing stories of Québécois living in New York.
-  </p>
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(247, 239, 231, 0.92);
+      border-bottom: 1px solid rgba(64, 40, 32, 0.08);
+      backdrop-filter: blur(10px);
+    }
 
-  <p>
-    Very quickly, the content resonated beyond expectations and turned into something bigger: a space where people connect, collaborate, and see themselves reflected in others’ journeys.
-  </p>
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 18px 0;
+    }
 
-  <ul>
-    <li>New collaborations</li>
-    <li>A growing audience across platforms</li>
-    <li>Real-life events bringing the community together in NYC</li>
-  </ul>
+    .logo {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+    }
 
-  <hr>
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
 
-  <h2>Collaborations & Partnerships</h2>
+    .nav-links a:hover {
+      color: var(--terracotta);
+    }
 
-  <p>
-    To expand the reach and impact of Québec Meets NYC, I developed collaborations with creators, institutions, and community partners:
-  </p>
+    .eyebrow {
+      color: var(--terracotta);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+    }
 
-  <div class="visual-block">
-    <img src="images/laurent-turcot.png" alt="Laurent Turcot collaboration">
-    <p class="caption">Québec–NYC historical collaboration</p>
-  </div>
+    h1,
+    h2,
+    h3 {
+      color: var(--brown);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.05;
+    }
 
-  <ul>
-    <li>
-      <strong>Laurent Turcot</strong> — Québec–NYC historical collaboration with strong audience reach<br>
-      <span>Data: 600K+ audience, reach/views to add</span>
-    </li>
-  </ul>
+    h1 {
+      font-size: clamp(3rem, 8vw, 6.2rem);
+      margin-bottom: 24px;
+      max-width: 850px;
+    }
 
-  <div class="visual-block">
-    <img src="images/udem.jpg" alt="Université de Montréal collaboration">
-    <p class="caption">Alumni storytelling collaboration in New York City</p>
-  </div>
+    h2 {
+      font-size: clamp(2rem, 4vw, 3.6rem);
+      margin-bottom: 18px;
+    }
 
-  <ul>
-    <li>
-      <strong>Université de Montréal</strong> — content showcasing alumni impact in New York City<br>
-      <span>Data: number of videos, reach, platforms to add</span>
-    </li>
-  </ul>
+    h3 {
+      font-size: 1.45rem;
+      margin-bottom: 10px;
+    }
 
-  <div class="visual-block">
-    <img src="images/french-community.jpg" alt="French community in NYC event">
-    <p class="caption">Francophone networking event in NYC</p>
-  </div>
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 0.9fr;
+      gap: 44px;
+      align-items: center;
+      padding: 78px 0 64px;
+    }
 
-  <ul>
-    <li>
-      <strong>French community in NYC</strong> — co-organized networking events for francophone audiences<br>
-      <span>Data: attendance, event reach, partners to add</span>
-    </li>
-  </ul>
+    .hero-copy p {
+      font-size: 1.15rem;
+      max-width: 680px;
+    }
 
-  <div class="visual-block">
-    <img src="images/frenchlo.jpg" alt="Frenchlo influencer collaboration">
-    <p class="caption">Comedy content promoting the French language in NYC</p>
-  </div>
+    .hero-media {
+      overflow: hidden;
+      border-radius: 28px;
+      background: var(--sand);
+      box-shadow: 0 24px 60px rgba(64, 40, 32, 0.16);
+    }
 
-  <ul>
-    <li>
-      <strong>Frenchlo</strong> — influencer collaboration promoting the French language through engaging, comedic content<br>
-      <span>Data: views, engagement, reach to add</span>
-    </li>
-  </ul>
+    .hero-media img {
+      aspect-ratio: 4 / 5;
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
 
-  <div class="visual-block">
-    <img src="images/theatre-francophone.jpg" alt="Théâtre Francophone à NYC collaboration">
-    <p class="caption">Content creation for Théâtre Francophone à NYC</p>
-  </div>
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 28px;
+    }
 
-  <ul>
-    <li>
-      <strong>Théâtre Francophone à NYC</strong> — content creation to promote their latest show<br>
-      <span>Data: content produced, reach, audience response to add</span>
-    </li>
-  </ul>
+    .button {
+      border: 1px solid var(--brown);
+      border-radius: 999px;
+      font-weight: 700;
+      padding: 13px 22px;
+      transition: 0.2s ease;
+    }
 
-  <p>
-    These collaborations helped position Québec Meets NYC as a platform for multi-partner projects with real cultural and community impact.
-  </p>
+    .button.primary {
+      background: var(--brown);
+      color: var(--white);
+    }
 
-  <hr>
+    .button:hover {
+      box-shadow: 0 10px 20px rgba(64, 40, 32, 0.12);
+      transform: translateY(-2px);
+    }
 
-  <h2>Interviews & Content</h2>
+    section {
+      padding: 70px 0;
+    }
 
-  <div class="visual-block">
-    <img src="images/interview-1.jpg" alt="Québec Meets NYC interview">
-    <p class="caption">Interview with a Québécois professional in NYC</p>
-  </div>
+    .intro-band {
+      background: var(--white);
+      border-bottom: 1px solid rgba(64, 40, 32, 0.08);
+      border-top: 1px solid rgba(64, 40, 32, 0.08);
+    }
 
-  <div class="visual-block">
-    <img src="images/interview-2.jpg" alt="Québec Meets NYC community storytelling">
-    <p class="caption">Community storytelling through short-form video</p>
-  </div>
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 46px;
+    }
 
-  <p>
-    A key pillar of Québec Meets NYC is storytelling through interviews.
-  </p>
+    .big-text {
+      color: var(--brown);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(1.45rem, 3vw, 2.35rem);
+      line-height: 1.22;
+    }
 
-  <ul>
-    <li>7–10+ interviews with Québécois living in NYC</li>
-    <li>Profiles across industries: tech, design, research, and business</li>
-    <li>Conversations focused on career journeys, cultural identity, and life abroad</li>
-  </ul>
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 34px;
+    }
 
-  <p><strong>Featured companies and profiles include:</strong></p>
+    .metric,
+    .card {
+      background: var(--white);
+      border: 1px solid rgba(64, 40, 32, 0.08);
+      border-radius: 8px;
+      box-shadow: 0 16px 35px rgba(64, 40, 32, 0.08);
+      padding: 28px;
+    }
 
-  <ul>
-    <li>Ecosystem — energy & decarbonization</li>
-    <li>IRIS Arlo</li>
-  </ul>
+    .metric strong {
+      color: var(--brown);
+      display: block;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 2.7rem;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
 
-  <hr>
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 28px;
+    }
 
-  <h2>Growth & Impact</h2>
+    .card ul,
+    .story-list {
+      margin: 16px 0 0 18px;
+    }
 
-  <div class="visual-block">
-    <img src="images/instagram-growth.jpg" alt="Québec Meets NYC Instagram page">
-    <p class="caption">Québec Meets NYC Instagram presence</p>
-  </div>
+    .card li,
+    .story-list li {
+      margin-bottom: 8px;
+    }
 
-  <p>Since launching the project:</p>
+    .feature {
+      background: var(--brown);
+      color: var(--white);
+    }
 
-  <ul>
-    <li>2,000+ followers across platforms</li>
-    <li>250,000+ total reach</li>
-    <li>Strong engagement driven by short-form video and community-focused content</li>
-  </ul>
+    .feature h2 {
+      color: var(--white);
+    }
 
-  <p>Beyond the numbers, the project has:</p>
+    .feature-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 34px;
+      align-items: start;
+    }
 
-  <ul>
-    <li>Created meaningful connections within the Québec diaspora</li>
-    <li>Led to collaborations with institutions and creators</li>
-    <li>Brought the community together through in-person events in NYC</li>
-  </ul>
+    .feature-panel {
+      background: rgba(255, 250, 245, 0.1);
+      border: 1px solid rgba(255, 250, 245, 0.2);
+      border-radius: 8px;
+      padding: 26px;
+    }
 
-  <hr>
+    .role-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-top: 28px;
+    }
 
-  <h2>My Role</h2>
+    .role-item {
+      background: var(--sand);
+      border-radius: 8px;
+      font-weight: 700;
+      padding: 20px;
+    }
 
-  <div class="visual-block">
-    <img src="images/my-role.jpg" alt="Behind the scenes of Québec Meets NYC">
-    <p class="caption">Content creation and community building in NYC</p>
-  </div>
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 24px;
+    }
 
-  <p>I lead all aspects of the project, including:</p>
+    .tag {
+      background: var(--white);
+      border-radius: 999px;
+      color: var(--terracotta);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      padding: 8px 12px;
+      text-transform: uppercase;
+    }
 
-  <ul>
-    <li>Content creation: video, interviews, storytelling</li>
-    <li>Social media strategy and growth</li>
-    <li>Partnership development</li>
-    <li>Community building: online and in-person events</li>
-    <li>Analytics and performance tracking</li>
-  </ul>
+    footer {
+      color: rgba(45, 32, 28, 0.72);
+      font-size: 0.9rem;
+      padding: 34px 0;
+      text-align: center;
+    }
 
-  <hr>
+    @media (max-width: 860px) {
+      .nav {
+        align-items: flex-start;
+      }
 
-  <p><strong>Category:</strong> Community Building · Content Strategy · Social Media · Cultural Diplomacy</p>
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 12px;
+      }
 
-  <p><strong>Tags:</strong> Québec · New York · Diaspora · Storytelling · Partnerships</p>
+      .hero,
+      .intro-grid,
+      .feature-grid,
+      .metrics,
+      .cards,
+      .role-grid {
+        grid-template-columns: 1fr;
+      }
 
-</section>
+      .hero {
+        padding-top: 54px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="logo" href="index.html">Sarah-Jeanne Raymond</a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html#portfolio">Portfolio</a>
+        <a href="index.html#work">What I do</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Founder Project</p>
+        <h1>Quebec Meets NYC</h1>
+        <p>I built Quebec Meets NYC as a bilingual storytelling and community platform for Quebecers, francophones, and allies in New York.</p>
+        <div class="button-row">
+          <a class="button primary" href="https://www.instagram.com/quebec_meets_nyc/" target="_blank" rel="noreferrer">View Instagram</a>
+          <a class="button" href="index.html#portfolio">Back to portfolio</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="laurent-turcot.png" alt="Quebec Meets NYC collaboration with Laurent Turcot" />
+      </div>
+    </div>
+
+    <section class="intro-band">
+      <div class="container intro-grid">
+        <p class="big-text">What started as a storytelling project became a growing network for cultural connection, visibility, and community in New York.</p>
+        <div>
+          <p>I created Quebec Meets NYC to highlight people, businesses, institutions, and ideas that show how Quebec lives beyond its borders.</p>
+          <p style="margin-top: 16px;">The project blends short-form video, interviews, event coverage, partnerships, and bilingual community storytelling.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <p class="eyebrow">Impact</p>
+        <h2>Built for visibility and connection.</h2>
+        <div class="metrics">
+          <div class="metric">
+            <strong>2,000+</strong>
+            <p>Community members and followers across platforms.</p>
+          </div>
+          <div class="metric">
+            <strong>250K+</strong>
+            <p>Total reach through social content and community storytelling.</p>
+          </div>
+          <div class="metric">
+            <strong>7-10+</strong>
+            <p>Interviews with Quebecers living and working in New York.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature">
+      <div class="container feature-grid">
+        <div>
+          <p class="eyebrow">Community Storytelling</p>
+          <h2>From interviews to in-person community.</h2>
+          <p>I started by sharing stories of Quebecers living in New York. The content quickly became a way for people to recognize themselves, discover each other, and build real relationships offline.</p>
+        </div>
+        <div class="feature-panel">
+          <ul class="story-list">
+            <li>Interviewed Quebec professionals across industries including tech, design, research, and business.</li>
+            <li>Created bilingual short-form videos for Instagram, LinkedIn, Facebook, and YouTube.</li>
+            <li>Coordinated content and events with creators, institutions, and francophone partners.</li>
+            <li>Used performance insights to shape the next stories, formats, and collaborations.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <p class="eyebrow">Selected Collaborations</p>
+        <h2>Partnerships with cultural and community reach.</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Laurent Turcot</h3>
+            <p>A Quebec-NYC historical collaboration connecting culture, history, and place for a broad audience.</p>
+          </article>
+          <article class="card">
+            <h3>Universite de Montreal</h3>
+            <p>Alumni storytelling content highlighting Quebec talent and professional journeys in New York.</p>
+          </article>
+          <article class="card">
+            <h3>Francophone Partners</h3>
+            <p>Community events and creator collaborations supporting the French-speaking community in NYC.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <p class="eyebrow">My Role</p>
+        <h2>I led the project end to end.</h2>
+        <div class="role-grid">
+          <div class="role-item">Content strategy and editorial direction</div>
+          <div class="role-item">Video interviews and short-form storytelling</div>
+          <div class="role-item">Partnership development and community outreach</div>
+          <div class="role-item">Social media publishing, analytics, and growth</div>
+          <div class="role-item">Event concepts, promotion, and recaps</div>
+          <div class="role-item">Bilingual communications in English and French</div>
+        </div>
+        <div class="tags" aria-label="Project tags">
+          <span class="tag">Community Building</span>
+          <span class="tag">Content Strategy</span>
+          <span class="tag">Social Media</span>
+          <span class="tag">Cultural Diplomacy</span>
+          <span class="tag">Quebec</span>
+          <span class="tag">New York</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">&copy; 2026 Sarah-Jeanne Raymond &middot; Public Affairs & Communications Portfolio</div>
+  </footer>
+</body>
+</html>

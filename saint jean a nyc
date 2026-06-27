@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saint-Jean à NYC | Sarah-Jeanne Raymond</title>
+  <meta name="description" content="Article sur la soirée de la Saint-Jean à New York organisée par Québec Meets NYC pour réunir les Québécois de la ville." />
+  <link rel="stylesheet" href="case-study.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="logo" href="index.html">Sarah-Jeanne Raymond</a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html#portfolio">Portfolio</a>
+        <a href="index.html#work">What I do</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Article · Événement</p>
+        <h1>Des Québécois recréent un petit coin de Québec à New York pour la Saint-Jean</h1>
+        <p>Loin de leur famille et de leur province, une trentaine de Québécois établis à New York se sont réunis pour célébrer la fête nationale du Québec et retrouver, le temps d’une soirée, un esprit de chez nous.</p>
+        <div class="button-row">
+          <a class="button primary" href="index.html#portfolio">Retour au portfolio</a>
+          <a class="button" href="quebec-meets-nyc.html">Voir Québec Meets NYC</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="french-community.jpg" alt="Une soirée québécoise réunissant des participants à New York" />
+      </div>
+    </div>
+
+    <section class="intro-band">
+      <div class="container intro-grid">
+        <p class="big-text">La soirée a permis de recréer, au cœur de Manhattan, un vrai esprit de Saint-Jean à travers la musique, les saveurs et la convivialité.</p>
+        <div>
+          <p>À l’origine de cette initiative se trouve Sarah-Jeanne Raymond Brière, fondatrice de Québec Meets NYC, une communauté qui met en relation les Québécois vivant à New York et fait découvrir la culture et l’histoire du Québec.</p>
+          <p style="margin-top: 16px;">« Le Québec nous manque. Pour nous, c’est une occasion de se rappeler d’où on vient et de se rassembler », explique-t-elle.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <p class="eyebrow">Le récit</p>
+        <h2>Une soirée à la fois festive et profondément émotive.</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Les saveurs du Québec</h3>
+            <p>Poutine préparée avec du vrai fromage en grains, produits de l’érable, boissons québécoises et musique des Cowboys Fringants et des Colocs ont permis aux participants de recréer un véritable esprit de la Saint-Jean au cœur de Manhattan.</p>
+          </article>
+          <article class="card">
+            <h3>Un lien vivant avec la culture</h3>
+            <p>Plusieurs participants racontent que ces rencontres sont devenues particulièrement importantes puisqu’elles leur permettent de garder un lien vivant avec leur culture, leur langue et leur communauté, peu importe la distance qui les sépare du Québec.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature">
+      <div class="container feature-grid">
+        <div>
+          <p class="eyebrow">Pourquoi cela compte</p>
+          <h2>Créer des espaces de rassemblement au-delà des frontières.</h2>
+          <p>Ces moments de rencontre ne sont pas seulement festifs. Ils deviennent des repères pour les Québécois de New York qui cherchent à maintenir un lien tangible avec leur identité, leur histoire et leur communauté.</p>
+        </div>
+        <div class="feature-panel">
+          <ul>
+            <li>Un événement culturel pensé pour rassembler les Québécois de New York.</li>
+            <li>Une expérience immersive autour des saveurs, des sons et des traditions du Québec.</li>
+            <li>Une façon concrète de renforcer les liens entre les membres de la communauté de l’autre côté de l’Atlantique.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">&copy; 2026 Sarah-Jeanne Raymond &middot; Public Affairs & Communications Portfolio</div>
+  </footer>
+</body>
+</html>
